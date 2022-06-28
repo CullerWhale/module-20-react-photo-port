@@ -14,9 +14,9 @@ function Nav() {
             description: "Fields, farmhouses, waterfalls, and the beauty of nature",
         },
     ];
-
-    function categorySelected (name) {
-        console.log(`${name} clicked`)
+// pineapple = name
+    function categorySelected (pineapple) {
+        console.log(`${pineapple} clicked`)
     }
 
     return (
@@ -36,13 +36,14 @@ function Nav() {
                     <li>
                         <span>Contact</span>
                     </li>
-                    {categories.map((category) => (
+                    {/* bananas = category */}
+                    {categories.map((bananas) => (
                         <li
                             className="mx-1"
-                            key={category.name}
+                            key={bananas.name}
                         >
-                            <span onClick= { () => categorySelected(category.name)}>
-                                {category.name}
+                            <span onClick= { () => categorySelected(bananas.name)}>
+                                {bananas.name}
                             </span>
                         </li>
                     ))}
